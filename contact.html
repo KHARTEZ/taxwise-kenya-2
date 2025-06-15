@@ -3,42 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us - TAXWISE-KE</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Contact - TAXWISE-KE</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="faqs.html">FAQs</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="the-bill-2025.html">The Bill 2025</a></li>
-      <li><a href="what-has-changed.html">What Has Changed</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <h1>TAXWISE-KE</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="the-bill-2025.html">The Bill 2025</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <main>
-    <h1>Contact TAXWISE-KE</h1>
+  <section class="hero">
+    <h2>Contact Us</h2>
+    <p>Got a question, correction, or insight about the Finance Bill 2025? Reach out!</p>
+  </section>
 
-    <p>If you have questions about the Finance Bill 2025 or want to collaborate, feel free to contact us:</p>
+  <section class="contact-form">
+    <form>
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br />
 
-    <form action="#" method="post">
-      <label for="name">Your Name:</label><br />
-      <input type="text" id="name" name="name" required /><br /><br />
-
-      <label for="email">Your Email:</label><br />
-      <input type="email" id="email" name="email" required /><br /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br />
 
       <label for="message">Message:</label><br />
-      <textarea id="message" name="message" rows="6" required></textarea><br /><br />
+      <textarea id="message" name="message" rows="5" required></textarea><br />
 
       <button type="submit">Send Message</button>
     </form>
-  </main>
+  </section>
+
+  <section class="cta">
+    <a href="index.html" class="button">Back to Home</a>
+    <a href="faqs.html" class="button">FAQs</a>
+  </section>
 
   <footer>
-    <p>&copy; 2025 TAXWISE-KE. All rights reserved.</p>
+    &copy; 2025 TAXWISE-KE. Your voice matters.
   </footer>
 </body>
 </html>
+
