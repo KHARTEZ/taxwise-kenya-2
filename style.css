@@ -1,114 +1,121 @@
-/* General Reset and Body Styling */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
-  color: #333;
+  color: #222;
   line-height: 1.6;
-  padding-bottom: 50px;
+  padding: 0;
 }
 
-/* Navigation Bar */
-nav {
-  background-color: #c8102e;
-  padding: 1rem;
+/* Header */
+header {
+  background-color: #b30000;
+  color: #fff;
+  padding: 20px;
   text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 25px;
+  padding: 10px 0;
 }
 
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #ffffff;
+nav a {
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-  color: #ffd700;
+nav a:hover {
+  text-decoration: underline;
 }
 
-/* Main Content */
-main {
+/* Hero Section */
+.hero {
+  background-color: #f8d7da;
+  color: #900;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Section Styling */
+section {
+  padding: 30px 20px;
   max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  margin: 0 auto;
 }
 
-/* Headings */
-h1 {
-  color: #c8102e;
-  margin-bottom: 1rem;
+section h2 {
+  color: #b30000;
+  margin-bottom: 15px;
 }
 
-h2 {
-  margin-top: 2rem;
-  color: #a00c26;
+.about p,
+.highlights ul,
+.learn ul {
+  font-size: 1rem;
+  margin-bottom: 10px;
 }
 
-/* Paragraphs and Text */
-p {
-  margin-bottom: 1rem;
+.learn ul,
+.highlights ul {
+  list-style: square inside;
 }
 
-/* Form Styling */
-form {
-  margin-top: 2rem;
-  background-color: #f8f8f8;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+/* CTA Section */
+.cta {
+  text-align: center;
+  background-color: #fff0f0;
+  padding: 30px 0;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
+.button {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  background-color: #b30000;
+  color: white;
   border-radius: 5px;
-}
-
-button {
-  background-color: #c8102e;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
+  text-decoration: none;
   font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
-button:hover {
-  background-color: #a00c26;
+.button:hover {
+  background-color: #800000;
 }
 
 /* Footer */
 footer {
-  background-color: #c8102e;
-  color: #fff;
+  background-color: #b30000;
+  color: white;
   text-align: center;
-  padding: 1rem;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  margin-top: 2rem;
+  padding: 15px;
+  font-size: 0.9rem;
 }
 
 
